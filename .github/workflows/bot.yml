@@ -28,9 +28,9 @@ jobs:
           
       - name: Run Bot
         env:
-          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
-          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
-          ADMIN_USER_ID: ${{ secrets.ADMIN_USER_ID }}
+          REDDIT_CLIENT_ID: Uy97AsZRhImy0TDzmaWjWw
+          REDDIT_CLIENT_SECRET: NkdrNP9448hzfKZj2tWfBl2MfYylkA
+          DISCORD_TOKEN: 6GGHrs31JlClHjkuwiQaO0pfJxoVUkub
+          DISCORD_CHANNEL_ID: 1390197420771639316
+          ADMIN_USER_ID: 1385489423612776501
         run: python bot.py
