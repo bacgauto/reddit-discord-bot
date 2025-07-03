@@ -14,7 +14,11 @@ from sklearn.naive_bayes import MultinomialNB
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 CHANNEL_ID = int(os.getenv('DISCORD_CHANNEL_ID'))
-ADMIN_USER_ID = int(os.getenv('ADMIN_USER_ID'))
+admin_id_str = os.getenv('ADMIN_USER_ID')
+if admin_id_str and 'E' in admin_id_str:
+    ADMIN_USER_ID = int(float(admin_id_str))
+else:
+    ADMIN_USER_ID = int(admin_id_str) if admin_id_str else None
 
 # Initialize Discord client
 intents = discord.Intents.default()
